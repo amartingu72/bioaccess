@@ -2,22 +2,25 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:p="http://primefaces.org/ui"
-      xmlns:h="http://java.sun.com/jsf/html">
-<head><title>IGNORED</title></head>  
-<body>    
-	<ui:composition>  
-	  <div class="logo">
-				<img src="images/image001.jpg" />
-			</div>
-			<div class="menu_principal">
-					<ul class="menu_principal lista">
-						<li><a href="#" class="seleccionado menIni tab-toggler" data-tab="tab-inicio">Inicio</a></li>
-						<li><a href="#" class="opciones_menu menAdm tab-toggler" data-tab="tab-admin">Administrador</a></li>
-						<li><a href="#" class="opciones_menu menUsu tab-toggler" data-tab="tab-usuario">Usuario</a></li>
-						<li><a href="#" class="opciones_menu menCon">Contacto</a></li>
-					</ul>
-		</div>
+      xmlns:h="http://java.sun.com/jsf/html"
+      >
+<head><title>IGNORED</title></head>
+<body>
+	<ui:composition>
+		<ul>
+			<li><a href='#'><span>Administradores</span></a></li>
+			<li><a href='#'><span>Usuarios</span></a></li>
+			<li><a href='#'><span>Perfiles</span></a></li>
+			<li class='has-sub'><a href='#'><span>Instalaciones</span></a>
+				<ul>
+					<li><a href='#'><span>A Coruña</span></a></li>
+					<li><a href='#'><span>Córdoba</span></a></li>
+					<li><a href='#'><span>Madrid</span></a></li>
+					<li class='last'><a href='#'><span>Nueva instalación</span></a></li>
+				</ul></li>
+			
+			<li class='last'><a href='#'><span>Salir</span></a></li>
+		</ul>
 	</ui:composition>
 </body>
 </html>

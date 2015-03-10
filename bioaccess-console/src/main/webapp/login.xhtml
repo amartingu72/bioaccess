@@ -7,10 +7,20 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:f="http://java.sun.com/jsf/core"> 
   
-	<ui:composition template="templates/login_layout.xhtml"> 
+	<ui:composition template="resources/templates/login_layout.xhtml"> 
 	
-	<ui:define name="central">
-	   hola a todos!
+	<ui:define name="content">
+		 <h:form>
+			<h2>#{msgs['login.title']}</h2>
+			<p:messages id="message" showSummary="true" showDetail="false"/>
+			<h:panelGrid columns="2">	
+				<p:outputLabel for="user" value="#{msgs['login.user']}" />
+				<p:inputText id="user" value="#{loginBBean.user}" required="true"/>
+				<p:outputLabel for="pwd" value="#{msgs['login.pwd']}"/>
+				<p:inputText id="pwd" value="#{loginBBean.pwd}"/>
+			</h:panelGrid><br/>
+			<p:commandButton  action="#{loginCBean.login}" value="#{msgs['login.login']}"/>
+		 </h:form>
 	</ui:define>
 	
 	</ui:composition>

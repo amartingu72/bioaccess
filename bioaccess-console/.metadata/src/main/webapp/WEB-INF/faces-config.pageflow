@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14256346064870" configfile="/bioaccess-console/src/main/webapp/WEB-INF/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14256346064870" configfile="/bioaccess-console/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" x="36" y="30" id="pf14259800597320" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14259800597331" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcome.xhtml" x="276" y="30" id="pf14259800597332" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14259800597331" path="/welcome.xhtml"/>
+  <links id="pf14259800597331" target="pf14259800597332" source="pf14259800597320" outcome="login" redirect="true"/>
+</pageflow:Pageflow>

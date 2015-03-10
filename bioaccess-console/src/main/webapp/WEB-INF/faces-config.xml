@@ -20,6 +20,32 @@
         <view-handler>org.primefaces.application.DialogViewHandler</view-handler>
     	<!-- Fin Para poder abrir dialogos PrimeFaces -->
 	</application>
+	<managed-bean>
+		<description>Bean de soporte para página de login.</description>
+		<managed-bean-name>loginBBean</managed-bean-name>
+		<managed-bean-class>vector.bioaccess.console.beans.LoginBBean</managed-bean-class>
+		<managed-bean-scope>view</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<description>Bean controlador para página de login.</description>
+		<managed-bean-name>loginCBean</managed-bean-name>
+		<managed-bean-class>vector.bioaccess.console.beans.LoginCBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+		<managed-property>
+			<property-name>loginBBean</property-name>
+			<property-class>vector.bioaccess.console.beans.LoginBBean</property-class>
+			<value>#{loginBBean}</value>
+		</managed-property>
+	</managed-bean>
+	<navigation-rule>
+		<display-name>login.xhtml</display-name>
+		<from-view-id>/login.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/welcome.xhtml</to-view-id>
+			<redirect />
+		</navigation-case>
+	</navigation-rule>
 
 
 </faces-config>
