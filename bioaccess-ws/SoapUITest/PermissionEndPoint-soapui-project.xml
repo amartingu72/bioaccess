@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project name="PermissionEndPoint" resourceRoot="" soapui-version="4.0.1.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="PermissionSoap11" type="wsdl" bindingName="{http://vector/bioaccess/ws/auto-generated}PermissionSoap11" soapVersion="1_1" anonymous="optional" definition="file:/C:/Users/xIS16819/Documents/permission.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:/C:/Users/xIS16819/Documents/permission.wsdl"><con:part><con:url>file:/C:/Users/xIS16819/Documents/permission.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://vector/bioaccess/ws/auto-generated" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://vector/bioaccess/ws/auto-generated" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://vector/bioaccess/ws/auto-generated">
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://vector/bioaccess/ws/auto-generated" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="getEntryPermissionRequest">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="userid" type="xs:int"/>
+            <xs:element name="controller" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getEntryPermissionResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="permission" type="xs:boolean"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!--<xs:complexType name="permission">
+        <xs:sequence>
+            <xs:element name="isgranted" type="xs:boolean"/>
+            <xs:element name="message" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>-->
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getEntryPermissionRequest">
+    <wsdl:part element="tns:getEntryPermissionRequest" name="getEntryPermissionRequest"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getEntryPermissionResponse">
+    <wsdl:part element="tns:getEntryPermissionResponse" name="getEntryPermissionResponse"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="Permission">
+    <wsdl:operation name="getEntryPermission">
+      <wsdl:input message="tns:getEntryPermissionRequest" name="getEntryPermissionRequest"></wsdl:input>
+      <wsdl:output message="tns:getEntryPermissionResponse" name="getEntryPermissionResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PermissionSoap11" type="tns:Permission">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getEntryPermission">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="getEntryPermissionRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getEntryPermissionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PermissionService">
+    <wsdl:port binding="tns:PermissionSoap11" name="PermissionSoap11">
+      <soap:address location="http://localhost:8080/bioaccess-ws/ws/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/bioaccess-ws/ws/</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="getEntryPermission" bindingOperationName="getEntryPermission" type="Request-Response" outputName="getEntryPermissionResponse" inputName="getEntryPermissionRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/bioaccess-ws/ws/</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:auto="http://vector/bioaccess/ws/auto-generated">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <auto:getEntryPermissionRequest>
+         <auto:userid>15</auto:userid>
+         <auto:controller>HALL01</auto:controller>
+      </auto:getEntryPermissionRequest>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://vector/bioaccess/ws/auto-generated/Permission/getEntryPermissionRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/></con:soapui-project>
