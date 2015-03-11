@@ -49,11 +49,7 @@
         </plugins>
     </build>
     <dependencies>
-    	<dependency>
-    		<artifactId>bioaccess-services</artifactId>
-  			<groupId>org.vector.biocube</groupId>
-  			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+    	
 		<dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
@@ -67,7 +63,12 @@
         <dependency>
 			<groupId>wsdl4j</groupId>
 			<artifactId>wsdl4j</artifactId>
-			<version>1.6.3</version>
+			<version>1.6.3</version> 
+		</dependency>
+		<dependency>
+    		<artifactId>bioaccess-services</artifactId>
+  			<groupId>org.vector.biocube</groupId>
+  			<version>0.0.1-SNAPSHOT</version> 
 		</dependency>
         
     </dependencies>

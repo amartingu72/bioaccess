@@ -34,7 +34,7 @@ public class PermissionEndPoint {
 	@ResponsePayload
 	public GetEntryPermissionResponse getEntryPermission(@RequestPayload GetEntryPermissionRequest request) {
 		GetEntryPermissionResponse response = new GetEntryPermissionResponse();
-		response.setPermission(permissionDataProvider.hasAccess(request.getUserid(), request.getFacilityid(),request.getController()));
+		response.setPermission(permissionDataProvider.hasAccess(request.getUserid(), request.getController()));
 		return response;
 	}
 }
