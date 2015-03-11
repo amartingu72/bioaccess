@@ -22,7 +22,7 @@ public class UserDAOImpl implements UserDAO {
         this.em = em;
     }
 
-    @Override
+   
 	public User loadUser(int userId) {
 		return em.find(User.class, userId);
 	}

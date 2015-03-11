@@ -4,12 +4,13 @@
   <name>bioaccess-services</name>
   <groupId>org.vector.biocube</groupId>
   <version>0.0.1-SNAPSHOT</version>
+        
   <dependencies>
   	<dependency>
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-context</artifactId>
   		<version>4.0.3.RELEASE</version>
-  	</dependency>
+  	</dependency> 
   	<dependency>
   		<groupId>org.vector.biocube</groupId>
 		<artifactId>bioaccess-mdl</artifactId>

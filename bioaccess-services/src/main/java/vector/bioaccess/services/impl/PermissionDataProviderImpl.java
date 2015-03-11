@@ -17,8 +17,8 @@ public class PermissionDataProviderImpl implements PermissionDataProvider {
 	@Resource(name="UsersRepository")
 	private UserDAO usersRepository;
 	
-	@Override
-	public boolean hasAccess(int userId, int facilityId, String accessCtrlName) {
+	
+	public boolean hasAccess(int userId, String accessCtrlName) {
 		
 		return usersRepository.loadUser(userId)!=null;
 	}
