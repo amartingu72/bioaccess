@@ -15,9 +15,9 @@
 			<p:messages id="message" showSummary="true" showDetail="false"/>
 			<h:panelGrid columns="2">	
 				<p:outputLabel for="user" value="#{msgs['login.user']}" />
-				<p:inputText id="user" value="#{loginBBean.user}" required="true"/>
+				<p:inputText id="user" value="#{loginSBean.email}" required="true"/>
 				<p:outputLabel for="pwd" value="#{msgs['login.pwd']}"/>
-				<p:inputText id="pwd" value="#{loginBBean.pwd}"/>
+				<p:inputText id="pwd" value="#{loginSBean.pwd}"/>
 			</h:panelGrid><br/>
 			<p:commandButton  action="#{loginCBean.login}" value="#{msgs['login.login']}"/>
 		 </h:form>

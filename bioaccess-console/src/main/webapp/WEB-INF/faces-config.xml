@@ -21,21 +21,21 @@
     	<!-- Fin Para poder abrir dialogos PrimeFaces -->
 	</application>
 	<managed-bean>
-		<description>Bean de soporte para página de login.</description>
-		<managed-bean-name>loginBBean</managed-bean-name>
-		<managed-bean-class>vector.bioaccess.console.beans.LoginBBean</managed-bean-class>
-		<managed-bean-scope>view</managed-bean-scope>
-	</managed-bean>
-	<managed-bean>
 		<description>Bean controlador para página de login.</description>
 		<managed-bean-name>loginCBean</managed-bean-name>
 		<managed-bean-class>vector.bioaccess.console.beans.LoginCBean</managed-bean-class>
 		<managed-bean-scope>request</managed-bean-scope>
 		<managed-property>
-			<property-name>loginBBean</property-name>
-			<property-class>vector.bioaccess.console.beans.LoginBBean</property-class>
-			<value>#{loginBBean}</value>
+			<property-name>loginSBean</property-name>
+			<property-class>vector.bioaccess.console.beans.LoginSBean</property-class>
+			<value>#{loginSBean}</value>
 		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<description>Mantiene los datos del usuario que hace login durante la sesión.</description>
+		<managed-bean-name>loginSBean</managed-bean-name>
+		<managed-bean-class>vector.bioaccess.console.beans.LoginSBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
 	<navigation-rule>
 		<display-name>login.xhtml</display-name>
