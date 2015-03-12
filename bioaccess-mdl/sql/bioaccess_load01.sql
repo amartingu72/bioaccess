@@ -17,9 +17,9 @@ INSERT INTO locations (country,zipcode,date) VALUES (724,'28223','20151225');
 --Creación de una instalación
 INSERT INTO facilities (name, description, last_test, zipcode) VALUES ( 'Pozuelo de Alarcón', 'Cerro de los Gamos, 1 edificio 6 1ªPlanta  91 183 03 00',null,'28224');
 -- Creación del administrador de compañía root
-INSERT INTO admins (name, surname1, surname2, email, is_cia_admin) VALUES ('root','root','root','amarting@vector-itcgroup.com',1);
+INSERT INTO admins (name, surname1, surname2, email, pwd, is_cia_admin) VALUES ('root','root','root','root@vector-itcgroup.com','r',1);
 -- Creación del administrador de local
-INSERT INTO admins (name, surname1, surname2, email, is_cia_admin) VALUES ('Alberto','Martín','Gutiérrez','amarting@vector-itcgroup.com',0);
+INSERT INTO admins (name, surname1, surname2, email, pwd, is_cia_admin) VALUES ('Alberto','Martín','Gutiérrez','amarting@vector-itcgroup.com','a',0);
 -- Vinculación admin local con instalación.
 NSERT INTO admins_facilities (admin_id, facility_id) VALUES (2,1);
 -- Creación de áreas para Pozuelo de Alarcón: parking, edificio CPD1, CPD2, CPD3, Dirección

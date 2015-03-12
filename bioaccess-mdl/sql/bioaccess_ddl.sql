@@ -118,6 +118,7 @@ create table admins(
   surname1 varchar(32) not null comment 'Primer apellido',
   surname2 varchar(32) comment 'Segundo apellido, si tiene.',
   email varchar(64) not null comment 'Correo',
+  pwd varchar(32) not null comment 'Contraseña',
   is_cia_admin tinyint not null default 0 comment 'Indicador de si es administrador de compañía. Por defecto, no(0)'
 );
 
