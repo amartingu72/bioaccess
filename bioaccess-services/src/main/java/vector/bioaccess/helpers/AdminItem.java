@@ -1,6 +1,6 @@
 package vector.bioaccess.helpers;
 
-import vector.bioaccess.model.Admin;
+
 
 public class AdminItem {
 	private int id;
@@ -8,16 +8,8 @@ public class AdminItem {
 	private String surname1;
 	private String surname2;
 	private String email;
+	private String pwd;
 	private boolean isCiaAdmin;
-	
-	public AdminItem(Admin admin){
-		id=admin.getId();
-		name=admin.getSurname1();
-		surname1=admin.getSurname1();
-		surname2=admin.getSurname2();
-		email=admin.getEmail();
-		isCiaAdmin=admin.getIsCiaAdmin()!=0;
-	}
 	
 	public AdminItem(){
 		super();
@@ -59,6 +51,14 @@ public class AdminItem {
 	}
 	public void setCiaAdmin(boolean isCiaAdmin) {
 		this.isCiaAdmin = isCiaAdmin;
+	}
+
+	public String getPwd() {
+		return pwd;
+	}
+
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
 	}
 	
 	
