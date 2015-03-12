@@ -14,7 +14,7 @@ create table locations (
 create table facilities (
 	id int AUTO_INCREMENT PRIMARY KEY,
 	name varchar(32) not null comment 'Nombre de la instalación.',
-	descripción varchar(256) comment 'Descripción. Normalmente incluirá la dirección y teléfonos de contacto.',
+	description varchar(256) comment 'Descripción. Normalmente incluirá la dirección y teléfonos de contacto.',
 	last_test timestamp comment 'Fecha en que se realizó el último test a los controladores de acceso de la instalación.',
 	zipcode varchar(5) not null comment 'Código postal. Determina los festivos que correspondiería a esta instalación'
 );

@@ -15,7 +15,7 @@ INSERT INTO locations (country,zipcode,date) VALUES (724,'28223','20151012');
 INSERT INTO locations (country,zipcode,date) VALUES (724,'28223','20151208');
 INSERT INTO locations (country,zipcode,date) VALUES (724,'28223','20151225');
 --Creación de una instalación
-INSERT INTO facilities (name, descripción, last_test, zipcode) VALUES ( 'Pozuelo de Alarcón', 'Cerro de los Gamos, 1 edificio 6 1ªPlanta  91 183 03 00',null,'28224');
+INSERT INTO facilities (name, description, last_test, zipcode) VALUES ( 'Pozuelo de Alarcón', 'Cerro de los Gamos, 1 edificio 6 1ªPlanta  91 183 03 00',null,'28224');
 -- Creación del administrador de compañía root
 INSERT INTO admins (name, surname1, surname2, email, is_cia_admin) VALUES ('root','root','root','amarting@vector-itcgroup.com',1);
 -- Creación del administrador de local
