@@ -19,7 +19,7 @@
 				<p:outputLabel for="pwd" value="#{msgs['login.pwd']}"/>
 				<p:inputText id="pwd" value="#{loginSBean.pwd}"/>
 			</h:panelGrid><br/>
-			<p:commandButton  action="#{loginCBean.login}" value="#{msgs['login.login']}"/>
+			<p:commandButton  action="#{loginCBean.login}" update="message" value="#{msgs['login.login']}"/>
 		 </h:form>
 	</ui:define>
 	

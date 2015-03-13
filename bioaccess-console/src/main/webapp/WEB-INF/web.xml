@@ -55,10 +55,7 @@
     <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
     <param-value>resources.application</param-value>
   </context-param>
-  <context-param>
-	<param-name>facelets.LIBRARIES</param-name>
-	<param-value>/WEB-INF/corejsf.taglib.xml</param-value>
-  </context-param>
+
   <listener>
     <listener-class>com.sun.faces.config.ConfigureListener</listener-class>
   </listener>

@@ -45,4 +45,12 @@ public interface AdminDataProvider {
 	 * @throws AdminNotFoundException Indica que el id de administrador no se encuentra.
 	 */
 	public void delete(int adminId) throws AdminNotFoundException;
+	
+	/**
+	 * Devuelve la lista de instalaciones que gestiona el administrador.
+	 * Si es administrador de CIA son todas. Si es adminstrador local, las que tenga asignadas.
+	 * @param adminId
+	 * @return
+	 */
+	public List<FacilityItem> getFacilities(AdminItem adminItem);
 }

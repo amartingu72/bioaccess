@@ -82,7 +82,7 @@ h2{
 {
 	
 	
-	width: 944px;
+	width: 500px;
 	height: 350px;
 	margin-left: 350px;
 	position: relative;
@@ -150,4 +150,8 @@ h2{
 	font-size: 13px;
 }
 
-
+/*PF Messages*/
+.ui-messages{
+	font-family: 'Open Sans Semibold';
+	font-size: 13px;
+}

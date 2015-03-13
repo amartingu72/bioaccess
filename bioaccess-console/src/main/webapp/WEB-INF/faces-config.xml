@@ -30,6 +30,11 @@
 			<property-class>vector.bioaccess.console.beans.LoginSBean</property-class>
 			<value>#{loginSBean}</value>
 		</managed-property>
+		<managed-property>
+			<property-name>adminDataProvider</property-name>
+			<property-class>vector.bioaccess.services.AdminDataProvider</property-class>
+			<value>#{adminDataProvider}</value>
+		</managed-property>
 	</managed-bean>
 	<managed-bean>
 		<description>Mantiene los datos del usuario que hace login durante la sesión.</description>

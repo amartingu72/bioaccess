@@ -12,6 +12,7 @@ import vector.bioaccess.helpers.AdminItem;
 import vector.bioaccess.helpers.EntityUtils;
 import vector.bioaccess.helpers.FacilityItem;
 import vector.bioaccess.model.Admin;
+import vector.bioaccess.model.Facility;
 import vector.bioaccess.repositories.AdminDAO;
 import vector.bioaccess.services.AdminDataProvider;
 import vector.bioaccess.services.excp.AdminNotFoundException;
@@ -74,6 +75,13 @@ public class AdminDataProviderImpl implements AdminDataProvider {
 	public void delete(int adminId) throws AdminNotFoundException {
 		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	public List<FacilityItem> getFacilities(AdminItem adminItem) {
+		List<Facility> facilities;
+		if ( adminItem.isCiaAdmin() )
+		return null;
 	}
 
 }

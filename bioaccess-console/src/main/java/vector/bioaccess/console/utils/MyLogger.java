@@ -79,6 +79,6 @@ public class MyLogger {
 	 * @param key
 	 */
 	public void log (String key) {
-		log(key,null);
+		log(key,"");
 	}
 }

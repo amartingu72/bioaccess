@@ -1,6 +1,8 @@
 package vector.bioaccess.repositories;
 
 
+import java.util.List;
+
 import vector.bioaccess.model.Admin;
 import vector.bioaccess.model.Facility;
 
@@ -35,5 +37,7 @@ public interface AdminDAO {
 	 * @param facilities Lista de instalaciones.
 	 */
 	public void addFacility(Admin admin, Facility facility);
+	
+	
 		
 }
